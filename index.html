@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Amatic+SC&family=Antic+Slab&family=Merriweather&family=Neucha&family=Righteous&family=Roboto+Slab&family=Shadows+Into+Light&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- W3 Schools Link -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <!-- Links for Meal and Exercise Area -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>The Ultimate Daily Calorie Tracking App</title>
+  </head>
+  <body>
+    <!-- Cool Jumbotron area -->
+
+    <header>
+      <div class="banner">
+        Find your motivation and tune into better health in 2021
+      </div>
+      <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0px;">
+        <div class="container-fluid">
+          <h1 class="display-4">The Ultimate Daily Calorie Tracking App</h1>
+          <p>Start tracking your calories today.</p>
+        </div>
+      </div>
+    </header>
+    <!-- Motivational area to break up space -->
+    <div class="motivationalArea">New year. New goals. New motivation.</div>
+
+
+
+    
+<!-- Input area for user -->
+    <div class="container-fluid statusArea">
+      <div class="row">
+        <!-- First Column -->
+
+        <div class="col-lg-4">
+          <div class="inputArea">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+              />
+
+              <label for="weight">Weight</label>
+              <input
+                type="text"
+                id="weight"
+                name="weight"
+                placeholder="Your weight.."
+              />
+
+              <label for="calories">Calories <a href="https://www.calculator.net/calorie-calculator.html" target="_blank">(Click here to calculate)</a></label>
+              <input
+                type="text"
+                id="calories"
+                name="calories"
+                placeholder="ex. 2800"
+              />
+
+              <label for="gender">Gender</label>
+              <select id="gender" name="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Intersex">Intersex</option>
+                <option value="preferNot">Prefer Not to Say</option>
+              </select>
+
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+        
+  
+  
+  
+  <div class="col-lg-8">
+  <div class="container mt-4">
+
+      <!-- Add Food Form -->
+
+    <div class="row card">
+      <div class="card-body">
+        <h5 class="card-title">Add Meal</h5>
+        <form class="row">
+          <div class="form-group col-sm-6">
+            <label for="item-name">Meal</label>
+            <input type="text" class="form-control" id="item-name" aria-describedby="itemName" placeholder="Add Item">
+
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="item-calories">Calories</label>
+            <input type="number" class="form-control" id="item-calories" aria-describedby="itemName" placeholder="Add Calories">
+
+          </div>
+          <div id="buttons" class="ml-3 d-flex flex-wrap">
+            <button type="button" class="btn btn-dark add-btn mb-1">
+              <i class="fa fa-plus mr-2"> </i>Add a Meal</button>
+            <button type="button" class="btn btn-info update-btn mb-1">
+              <i class="fa fa-pencil-square-o mr-2"> </i>Update Meal</button>
+            <button type="button" class="btn btn-warning delete-btn ml-2  mb-xs-4 mb-1">
+              <i class="fa fa-remove mr-2"> </i>Delete Meal</button>
+            <button type="button" class="btn btn-danger add-btn  delete-all-btn ml-2 mb-1">
+              <i class="fa fa-plus mr-2"> </i>Delete All</button>
+            <button type="button" class="btn  btn-success back-btn ml-2 mb-1">
+              <i class="fa fa-chevron-circle-left mr-2"> </i>Back</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+    <!-- Calorie count -->
+    <div class="row">
+      <div class="col-sm-12">
+          <h3 class="mt-1 mx-auto text-center">Total Calories from Food:
+              <span class="total-calories">0</span>
+            </h3>
+      </div>
+    </div>
+    <!-- List of items -->
+    <div class="row">
+      <ul id="item-list" class="list-group mx-auto" style="width:100%">
+        <li class="list-group-item" id="item-0">
+          <strong>Steak Dinner: </strong>
+          <em>1200 Calories</em>
+          <small>
+            <a href="#">
+              <i class="edit-item fa fa-pencil mt-1 float-right"></i>
+            </a>
+          </small>
+        </li>
+        <li class="list-group-item" id="item-1">
+          <strong>Cookie: </strong>
+          <em>4000 Calories</em>
+          <small>
+            <a href="#">
+              <i class="edit-item fa fa-pencil mt-1 float-right"></i>
+            </a>
+          </small>
+        </li>
+        <li class="list-group-item" id="item-2">
+          <strong>Eggs: </strong>
+          <em>300 Calories</em>
+          <small>
+            <a href="#">
+              <i class="edit-item fa fa-pencil mt-1 float-right"></i>
+            </a>
+          </small>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- Add Exercise Form -->
+    <div class="container mt-4">
+  
+  
+      <div class="row card">
+        <div class="card-body">
+          <h5 class="card-title">Add Exercise</h5>
+          <form class="row">
+            <div class="form-group col-sm-6">
+              <label for="item2-name">Exercise</label>
+              <input type="text" class="form-control" id="item2-name" aria-describedby="item2Name" placeholder="Add Exercise">
+  
+            </div>
+            <div class="form-group col-sm-6">
+              <label for="item2-calories">Calories</label>
+              <input type="number" class="form-control" id="item2-calories" aria-describedby="item2Name" placeholder="Add Calories">
+  
+            </div>
+            <div id="buttons" class="ml-3 d-flex flex-wrap">
+              <button type="button" class="btn btn-dark add-btn mb-1">
+                <i class="fa fa-plus mr-2"> </i>Add an Exercise</button>
+              
+  
+          </form>
+        </div>
+      </div>
+  
+      <!-- Calorie count -->
+      <div class="row">
+        <div class="col-sm-12">
+            <h3 class="mt-1 mx-auto text-center">Total Calories from Exercise:
+                <span class="total-calories">0</span>
+              </h3>
+        </div>
+      </div>
+      </div>
+      </div>
+</div>
+
+<!--
+  Area for Dashboard to Populate from Javascript
+1. Calories start of day
+2. Calories subtracted from food
+3. Calories added by Exercise
+4. Calories Left
+
+-->
+
+
+      <footer class="footer">
+        <div class="container">
+          <span class="text-muted">Disclaimer: This website is for a coding project and should not be taken as medical or physical advice</span>
+        </div>
+      </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+    <script src="app2.js"></script>
+  </body>
+</html>
