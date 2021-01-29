@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-height: 100%;
+}
+
+.banner {
+  top: 0px;
+  left: 0px;
+  background-color: #f0e5d8;
+  color: #black;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  font-weight: 500;
+  font-family: "Roboto";
+  font-size: 1rem;
+}
+
+.jumbotron {
+  opacity: 100%;
+  text-align: center;
+  background-image: url(https://hosting.photobucket.com/images/kk166/tonyfcpremix/fitness-workout-gym-weights-female-athlete.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: 0 50%;
+  padding: 1.5rem;
+  color: white;
+  font-family: "Merriweather";
+  font-size: 15px;
+}
+
+.display-4 {
+  font-family: "Merriweather", serif;
+  font-weight: 800;
+  letter-spacing: 0.5rem;
+}
+
+.lead {
+  color: black;
+  font-weight: 800;
+}
+
+.footer {
+  background-color: #0f3057;
+  color: white;
+  font-family: "Roboto";
+  text-align: center;
+  padding: 15px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.inputArea {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.motivationalArea {
+  background-color: #0f3057;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: "Roboto";
+  text-align: center;
+  font-size: 2rem;
+}
+
+.statusArea {
+  padding-top: 10px;
+}
+
+.container-fluid {
+  padding-top: 75px;
+  text-align: left;
+}
