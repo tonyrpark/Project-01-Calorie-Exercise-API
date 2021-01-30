@@ -9,7 +9,7 @@
       />
   </head>
 
-  
+
   <body>
     <div class="container">
       <h1>Show me the calories:</h1>
@@ -44,23 +44,26 @@
       method: "GET"})
       .then(function(response) {
       console.log(response)
-      console.log(response.foods[0].foodNutrients[9].value)
-      $("#food-view").text(JSON.stringify(response.foods[0].foodNutrients[9].value));
-
-
-
-
-
-
-      }
+      //console.log(response.foods[0].foodNutrients[9].value)
+      
+      
+      
+      for (let calories of response.foods[0].foodNutrients)
+      {
+        console.log("test");
        
-
-   
-      )});
+        if (calories.nutrientId === 1008){
+          console.log("value");
+          console.log(calories.value);
+          $("#food-view").text(JSON.stringify(calories.value));
+        }
+}
+    
+}
+       )});
       
     </script>
     </div>
   </body>
 
 </html>
-
