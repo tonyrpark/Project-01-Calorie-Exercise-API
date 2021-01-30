@@ -188,8 +188,8 @@ const UI = (function () {
 
   getItemInput: function getItemInput() {
     return {
-      name: document.querySelector("#item-name").value,
-      calories: document.querySelector("#item-calories").value,
+      name: document.querySelector(".item-name").value,
+      calories: document.querySelector(".item-calories").value,
     };
   }
 
@@ -208,8 +208,8 @@ const UI = (function () {
   }
 
   clearFields: function clearFields() {
-    document.querySelector("#item-name").value = "";
-    document.querySelector("#item-calories").value = "";
+    document.querySelector(".item-name").value = "";
+    document.querySelector(".item-calories").value = "";
   }
 
   clearEditState: function clearEditState() {

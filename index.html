@@ -50,7 +50,6 @@
 
 
 
-    
 <!-- Input area for user -->
     <div class="container-fluid statusArea">
       <div class="row">
@@ -118,17 +117,26 @@
         <form class="row">
           <div class="form-group col-sm-6">
             <label for="item-name">Meal</label>
-            <input type="text" class="form-control" id="item-name" aria-describedby="itemName" placeholder="Add Item">
+            <input type="text" class="form-control item-name" id="food-input" aria-describedby="itemName" placeholder="Add Item">
 
           </div>
           <div class="form-group col-sm-6">
-            <label for="item-calories">Calories</label>
-            <input type="number" class="form-control" id="item-calories" aria-describedby="itemName" placeholder="Add Calories">
+            <label for="item-calories food-view">Calories</label>
+            <input type="text" class="food-view form-control item-calories" aria-describedby="itemName" placeholder="Add Calories">
 
           </div>
           <div id="buttons" class="ml-3 d-flex flex-wrap">
+
+            <!-- Need to add an extra button to integrate Eric's Food API 
+            add-btn mb-1
+            -->
+            <button type="button" id="find-food" class="btn btn-light">
+              <i class="fa fa-plus mr-2"> </i>Food Search</button>
+
             <button type="button" class="btn btn-dark add-btn mb-1">
               <i class="fa fa-plus mr-2"> </i>Add a Meal</button>
+
+
             <button type="button" class="btn btn-info update-btn mb-1">
               <i class="fa fa-pencil-square-o mr-2"> </i>Update Meal</button>
             <button type="button" class="btn btn-warning delete-btn ml-2  mb-xs-4 mb-1">
@@ -231,6 +239,7 @@
 2. Calories subtracted from food
 3. Calories added by Exercise
 4. Calories Left
+<h1>Show me the calories:</h1>
 
 -->
 
@@ -245,6 +254,7 @@
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
       integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
@@ -256,6 +266,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="app.js"></script>
-    <script src="app2.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
