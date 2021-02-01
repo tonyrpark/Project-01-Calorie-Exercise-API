@@ -161,7 +161,7 @@
     </div>
     <!-- List of items -->
     <div class="row">
-      <ul id="item-list" class="list-group mx-auto" style="width:100%">
+      <ul id="item-list-food" class="list-group mx-auto item-list" style="width:100%">
         <li class="list-group-item" id="item-0">
           <strong>Steak Dinner: </strong>
           <em>1200 Calories</em>
@@ -193,28 +193,47 @@
     </div>
   </div>
 
-
-  <!-- Add Exercise Form -->
+  <!-- EXERCISE COMPONENT -->
+  <div class="col-lg-8">
     <div class="container mt-4">
+  
+        <!-- Add Exercise Form -->
   
       <div class="row card">
         <div class="card-body">
           <h5 class="card-title">Add Exercise</h5>
           <form class="row">
             <div class="form-group col-sm-6">
-              <label for="item2-name">Exercise</label>
-              <input type="text" class="form-control" id="item2-name" aria-describedby="itemName" placeholder="Add Exercise">
+              <label for="item-name">Exercise</label>
+              <input type="text" class="form-control item-name" id="exercise-input" aria-describedby="itemName" placeholder="Add Item">
   
             </div>
             <div class="form-group col-sm-6">
-              <label for="item2-calories">Calories</label>
-              <input type="number" class="form-control" id="item2-calories" aria-describedby="itemName" placeholder="Add Calories">
+              <label for="item-calories exercise-view">Calories</label>
+              <input type="text" class="exercise-view form-control item-calories" id="exercise-view" aria-describedby="itemName" placeholder="Add Calories">
   
             </div>
             <div id="buttons" class="ml-3 d-flex flex-wrap">
-              <button type="button" class="btn btn-dark add-btn mb-1">
+  
+              <!-- Need to add an extra button to integrate exercise API
+              add-btn mb-1
+              -->
+              <button type="button" id="find-exercise" class="btn btn-light">
+                <i class="fa fa-plus mr-2"> </i>Exercise Search</button>
+  
+              <button type="button" class="btn btn-dark add-btn add-btn-exercise mb-1">
                 <i class="fa fa-plus mr-2"> </i>Add an Exercise</button>
-              
+  
+  
+              <button type="button" class="btn btn-info update-btn mb-1">
+                <i class="fa fa-pencil-square-o mr-2"> </i>Update Exercise</button>
+              <button type="button" class="btn btn-warning delete-btn ml-2  mb-xs-4 mb-1">
+                <i class="fa fa-remove mr-2"> </i>Delete Exercise</button>
+              <button type="button" class="btn btn-danger add-btn  delete-all-btn ml-2 mb-1">
+                <i class="fa fa-plus mr-2"> </i>Delete All</button>
+              <button type="button" class="btn  btn-success back-btn ml-2 mb-1">
+                <i class="fa fa-chevron-circle-left mr-2"> </i>Back</button>
+            </div>
   
           </form>
         </div>
@@ -224,23 +243,46 @@
       <div class="row">
         <div class="col-sm-12">
             <h3 class="mt-1 mx-auto text-center">Total Calories from Exercise:
-                <span class="total-calories">0</span>
+                <span class="total-calories-exercise">0</span>
               </h3>
         </div>
       </div>
+      <!-- List of items -->
+      <div class="row">
+        <ul id="item-list-ex" class="list-group mx-auto item-list" style="width:100%">
+          <li class="list-group-item" id="item-0">
+            <strong>1 hour weightlift session (intense): </strong>
+            <em>570 Calories</em>
+            <small>
+              <a href="#">
+                <i class="edit-item fa fa-pencil mt-1 float-right"></i>
+              </a>
+            </small>
+          </li>
+          <li class="list-group-item" id="item-1">
+            <strong>1 mile run (intense) </strong>
+            <em>557 Calories</em>
+            <small>
+              <a href="#">
+                <i class="edit-item fa fa-pencil mt-1 float-right"></i>
+              </a>
+            </small>
+          </li>
+          <li class="list-group-item" id="item-2">
+            <strong>1 hour swim (intense) </strong>
+            <em>590 Calories</em>
+            <small>
+              <a href="#">
+                <i class="edit-item fa fa-pencil mt-1 float-right"></i>
+              </a>
+            </small>
+          </li>
+        </ul>
       </div>
-      </div>
-</div>
+    </div>
+  
+<!-- END EXERCISE COMPONENT -->
 
-<!--
-  Area for Dashboard to Populate from Javascript
-1. Calories start of day
-2. Calories subtracted from food
-3. Calories added by Exercise
-4. Calories Left
-<h1>Show me the calories:</h1>
-
--->
 
 
       <footer class="footer">
@@ -264,11 +306,8 @@
       integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
       crossorigin="anonymous"
     ></script>
-    <!-- "app.js" is the Javascript Code for the Meal Section -->
     <script src="app.js"></script>
-    <!-- "script.js" is the Javascript Code to get the buttons to function like add/delete/modify -->
     <script src="script.js"></script>
-    <!-- "exercise.js" is the Javascript Code for the Exercise Section -->
     <script src="exercise.js"></script>
   </body>
 </html>

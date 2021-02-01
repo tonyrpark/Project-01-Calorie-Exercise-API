@@ -168,7 +168,7 @@ const ItemCtrl = (function () {
 })();
 
 // UI controller
-const UI = (function () {
+var UI = (function () {
   populateItems: function populateItems(items) {
     let listItems = "";
     items.forEach((item) => {
@@ -183,7 +183,7 @@ const UI = (function () {
     </li>`;
     });
     //Inserting the list items
-    document.querySelector("#item-list").innerHTML = listItems;
+    document.querySelector(".item-list").innerHTML = listItems;
   }
 
   getItemInput: function getItemInput() {
@@ -204,7 +204,7 @@ const UI = (function () {
           <i class="edit-item fa fa-pencil mt-1 float-right"></i>
         </a>
       </small>`;
-    document.querySelector("#item-list").insertAdjacentElement("beforeend", li);
+    document.querySelector(".item-list").insertAdjacentElement("beforeend", li);
   }
 
   clearFields: function clearFields() {
@@ -354,7 +354,7 @@ const App = (function (ItemCtrl, UI, StorageCtrl) {
     document.querySelector(".add-btn").addEventListener("click", itemAddSubmit);
     //Edit click event
     document
-      .querySelector("#item-list")
+      .querySelector(".item-list")
       .addEventListener("click", UI.itemEditClick);
     //Update item event
     document
@@ -392,7 +392,7 @@ const App = (function (ItemCtrl, UI, StorageCtrl) {
       const newItem = ItemCtrl.addItem(input.name, input.calories);
       UI.addListItem(newItem);
 
-      //Get totoal calories
+      //Get total calories
       const sumCalories = ItemCtrl.sumCalories();
       //Updating total calories in the UI
       UI.showTotalCalories(sumCalories);
@@ -409,7 +409,7 @@ const App = (function (ItemCtrl, UI, StorageCtrl) {
     init: function () {
       //Clear edit state
       UI.clearEditState();
-      console.log("Starting the app...");
+      console.log("Starting the food app...");
       //Fetching the items
       const items = ItemCtrl.getItems();
       //Populating the list with items

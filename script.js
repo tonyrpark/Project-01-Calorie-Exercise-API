@@ -15,12 +15,12 @@ $("#find-food").on("click", function (event) {
 
     var calorieValue = $("<p>");
 
-    $(".food-view").text(
-      JSON.stringify(response.foods[0].foodNutrients[9].value)
-    );
+    // $("#food-view").text(
+    // //       JSON.stringify(response.foods[0].foodNutrients[9].value)
+    // );
 
-    calorieValue.text(response.foods[0].foodNutrients[9].value);
-
-    $(".food-view").append(calorieValue);
+    // calorieValue.text(response.foods[0].foodNutrients[9].value);
+    console.log(calorieValue);
+    $("#food-view").val(response.foods[0].foodNutrients[9].value);
   });
 });
