@@ -28,38 +28,55 @@ $("#find-food").on("click", function (event) {
 
 // EXERCISE API CODE
 
+// const settings = {
+//   url: "https://trackapi.nutritionix.com/v2/natural/exercise",
+//   method: "GET",
+//   headers: {
+//     "x-app-id": "16588fb4",
+//     "x-app-key": "5f0cad786616a38357569762034fcf0d",
+//     "x-remote-user-id": 0,
+//     "Content-Type": "application/json",
+//   },
+// };
+
+// $.ajax(settings).done(function (response) {
+//   console.log(response);
+// });
+
+// $("#find-exercise").on("click", function (event) {
+//   event.preventDefault();
+//   const calEx = $("#food-input").val();
+//   const stuff = `${encodeURIComponent(calEx)}`;
+//   const queryURL = `https://trackapi.nutritionix.com/v2/natural/exercise`;
+
+//   console.log(stuff);
+
+//   $.ajax({
+//     url: queryURL,
+//     method: "GET",
+//   }).then(function (response) {
+//     console.log(response);
+
+//     var calorieValue = $("<p>");
+
+//     console.log(calorieValue);
+//     $("#food-view").val(response.foods[0].foodNutrients[9].value);
+//   });
+// });
+
 const settings = {
-  url: "https://trackapi.nutritionix.com/v2/natural/exercise",
+  async: true,
+  crossDomain: true,
+  url:
+    "https://quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com/quote?token=ipworld.info",
   method: "GET",
   headers: {
-    "x-app-id": "16588fb4",
-    "x-app-key": "5f0cad786616a38357569762034fcf0d",
-    "x-remote-user-id": 0,
-    "Content-Type": "application/json",
+    "x-rapidapi-key": "980fbf3eb4msh7995ecf778f3f83p1f9cdejsn73478224c087",
+    "x-rapidapi-host":
+      "quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com",
   },
 };
 
 $.ajax(settings).done(function (response) {
   console.log(response);
-});
-
-$("#find-exercise").on("click", function (event) {
-  event.preventDefault();
-  const calEx = $("#food-input").val();
-  const stuff = `${encodeURIComponent(calEx)}`;
-  const queryURL = `https://trackapi.nutritionix.com/v2/natural/exercise`;
-
-  console.log(stuff);
-
-  $.ajax({
-    url: queryURL,
-    method: "GET",
-  }).then(function (response) {
-    console.log(response);
-
-    var calorieValue = $("<p>");
-
-    console.log(calorieValue);
-    $("#food-view").val(response.foods[0].foodNutrients[9].value);
-  });
 });
