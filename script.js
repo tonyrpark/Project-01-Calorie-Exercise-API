@@ -1,3 +1,4 @@
+// FOOD API CODE
 $("#find-food").on("click", function (event) {
   event.preventDefault();
   const cal = $("#food-input").val();
@@ -20,6 +21,44 @@ $("#find-food").on("click", function (event) {
     // );
 
     // calorieValue.text(response.foods[0].foodNutrients[9].value);
+    console.log(calorieValue);
+    $("#food-view").val(response.foods[0].foodNutrients[9].value);
+  });
+});
+
+// EXERCISE API CODE
+
+const settings = {
+  url: "https://trackapi.nutritionix.com/v2/natural/exercise",
+  method: "GET",
+  headers: {
+    "x-app-id": "16588fb4",
+    "x-app-key": "5f0cad786616a38357569762034fcf0d",
+    "x-remote-user-id": 0,
+    "Content-Type": "application/json",
+  },
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+$("#find-exercise").on("click", function (event) {
+  event.preventDefault();
+  const calEx = $("#food-input").val();
+  const stuff = `${encodeURIComponent(calEx)}`;
+  const queryURL = `https://trackapi.nutritionix.com/v2/natural/exercise`;
+
+  console.log(stuff);
+
+  $.ajax({
+    url: queryURL,
+    method: "GET",
+  }).then(function (response) {
+    console.log(response);
+
+    var calorieValue = $("<p>");
+
     console.log(calorieValue);
     $("#food-view").val(response.foods[0].foodNutrients[9].value);
   });

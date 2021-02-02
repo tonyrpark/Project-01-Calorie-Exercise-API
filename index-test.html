@@ -25,9 +25,16 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
     <!-- Links for Meal and Exercise Area -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <title>The Ultimate Daily Calorie Tracking App</title>
   </head>
@@ -38,7 +45,7 @@
       <div class="banner">
         Find your motivation and tune into better health in 2021
       </div>
-      <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0px;">
+      <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0px">
         <div class="container-fluid">
           <h1 class="display-4">The Ultimate Daily Calorie Tracking App</h1>
           <p>Start tracking your calories today.</p>
@@ -48,9 +55,7 @@
     <!-- Motivational area to break up space -->
     <div class="motivationalArea">New year. New goals. New motivation.</div>
 
-
-
-<!-- Input area for user -->
+    <!-- Input area for user -->
     <div class="container-fluid statusArea">
       <div class="row">
         <!-- First Column -->
@@ -82,7 +87,14 @@
                 placeholder="Your weight.."
               />
 
-              <label for="calories">Calories <a href="https://www.calculator.net/calorie-calculator.html" target="_blank">(Click here to calculate)</a></label>
+              <label for="calories"
+                >Calories
+                <a
+                  href="https://www.calculator.net/calorie-calculator.html"
+                  target="_blank"
+                  >(Click here to calculate)</a
+                ></label
+              >
               <input
                 type="text"
                 id="calories"
@@ -102,110 +114,151 @@
             </form>
           </div>
         </div>
-        
-  
-  
-  
-  <div class="col-lg-8">
-  <div class="container mt-4">
 
-      <!-- Add Food Form -->
+        <div class="col-lg-8">
+          <div class="container mt-4">
+            <!-- Add Food Form -->
 
-    <div class="row card">
-      <div class="card-body">
-        <h5 class="card-title">Add Meal or Exercise</h5>
-        <form class="row">
-          <div class="form-group col-sm-6">
-            <label for="item-name">Item (Ex. Banana) </label>
-            <input type="text" class="form-control item-name" id="food-input" aria-describedby="itemName" placeholder="Add Item">
-
-          </div>
-          <div class="form-group col-sm-6">
-            <label for="item-calories food-view">Calories</label>
-            <input type="text" class="food-view form-control item-calories" id="food-view" aria-describedby="itemName" placeholder="Add Calories">
-
-          </div>
-          <div id="buttons" class="ml-3 d-flex flex-wrap">
-
-            <!-- Need to add an extra button to integrate Eric's Food API 
+            <div class="row card">
+              <div class="card-body">
+                <h5 class="card-title">Add Meal or Exercise</h5>
+                <form class="row">
+                  <div class="form-group col-sm-6">
+                    <label for="item-name">Item (Ex. Banana) </label>
+                    <input
+                      type="text"
+                      class="form-control item-name"
+                      id="food-input"
+                      aria-describedby="itemName"
+                      placeholder="Add Item"
+                    />
+                  </div>
+                  <div class="form-group col-sm-6">
+                    <label for="item-calories food-view">Calories</label>
+                    <input
+                      type="text"
+                      class="food-view form-control item-calories"
+                      id="food-view"
+                      aria-describedby="itemName"
+                      placeholder="Add Calories"
+                    />
+                  </div>
+                  <div id="buttons" class="ml-3 d-flex flex-wrap">
+                    <!-- Need to add an extra button to integrate Eric's Food API 
             add-btn mb-1
             -->
-            <button type="button" id="find-food" class="btn btn-light">
-              <i class="fa fa-plus mr-2"> </i>Search Food API</button>
+                    <button
+                      type="button"
+                      id="find-food"
+                      class="btn btn-primary mb-1 mr-2"
+                    >
+                      <i class="fa fa-plus mr-2"> </i>Search Food API
+                    </button>
 
-              <button type="button" id="find-exercise" class="btn btn-light">
-                <i class="fa fa-plus mr-2"> </i>Search Exercise API</button>
+                    <button
+                      type="button"
+                      id="find-exercise"
+                      class="btn btn-secondary mb-1 mr-2"
+                    >
+                      <i class="fa fa-plus mr-2"> </i>Search Exercise API
+                    </button>
 
-            <button type="button" class="btn btn-dark add-btn mb-1">
-              <i class="fa fa-plus mr-2"> </i>Add Item</button>
+                    <button type="button" class="btn btn-dark add-btn mb-1">
+                      <i class="fa fa-plus mr-2"> </i>Add Item
+                    </button>
 
+                    <button type="button" class="btn btn-info update-btn mb-1">
+                      <i class="fa fa-pencil-square-o mr-2"> </i>Update Item
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-warning delete-btn ml-2 mb-xs-4 mb-1"
+                    >
+                      <i class="fa fa-remove mr-2"> </i>Delete Item
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger add-btn delete-all-btn ml-2 mb-1"
+                    >
+                      <i class="fa fa-plus mr-2"> </i>Delete All
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-success back-btn ml-2 mb-1"
+                    >
+                      <i class="fa fa-chevron-circle-left mr-2"> </i>Back
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
 
-            <button type="button" class="btn btn-info update-btn mb-1">
-              <i class="fa fa-pencil-square-o mr-2"> </i>Update Item</button>
-            <button type="button" class="btn btn-warning delete-btn ml-2  mb-xs-4 mb-1">
-              <i class="fa fa-remove mr-2"> </i>Delete Item</button>
-            <button type="button" class="btn btn-danger add-btn  delete-all-btn ml-2 mb-1">
-              <i class="fa fa-plus mr-2"> </i>Delete All</button>
-            <button type="button" class="btn  btn-success back-btn ml-2 mb-1">
-              <i class="fa fa-chevron-circle-left mr-2"> </i>Back</button>
+            <!-- Calorie count -->
+            <div class="row">
+              <div class="col-sm-12">
+                <h3 class="mt-1 mx-auto text-center">
+                  Total Calories:
+                  <span class="total-calories">0</span>
+                </h3>
+              </div>
+            </div>
+            <!-- List of items -->
+            <div class="row">
+              <ul id="item-list" class="list-group mx-auto" style="width: 100%">
+                <li class="list-group-item" id="item-0">
+                  <strong>Steak Dinner: </strong>
+                  <em>1200 Calories</em>
+                  <small>
+                    <a href="#">
+                      <i class="edit-item fa fa-pencil mt-1 float-right"></i>
+                    </a>
+                  </small>
+                </li>
+                <li class="list-group-item" id="item-1">
+                  <strong>Swimming 1 hr (intense) </strong>
+                  <em>560 Calories</em>
+                  <small>
+                    <a href="#">
+                      <i class="edit-item fa fa-pencil mt-1 float-right"></i>
+                    </a>
+                  </small>
+                </li>
+                <li class="list-group-item" id="item-2">
+                  <strong>Eggs: </strong>
+                  <em>300 Calories</em>
+                  <small>
+                    <a href="#">
+                      <i class="edit-item fa fa-pencil mt-1 float-right"></i>
+                    </a>
+                  </small>
+                </li>
+              </ul>
+            </div>
           </div>
-
-        </form>
-      </div>
-    </div>
-
-    <!-- Calorie count -->
-    <div class="row">
-      <div class="col-sm-12">
-          <h3 class="mt-1 mx-auto text-center">Total Calories:
-              <span class="total-calories">0</span>
-            </h3>
-      </div>
-    </div>
-    <!-- List of items -->
-    <div class="row">
-      <ul id="item-list" class="list-group mx-auto" style="width:100%">
-        <li class="list-group-item" id="item-0">
-          <strong>Steak Dinner: </strong>
-          <em>1200 Calories</em>
-          <small>
-            <a href="#">
-              <i class="edit-item fa fa-pencil mt-1 float-right"></i>
-            </a>
-          </small>
-        </li>
-        <li class="list-group-item" id="item-1">
-          <strong>Swimming 1 hr (intense) </strong>
-          <em>560 Calories</em>
-          <small>
-            <a href="#">
-              <i class="edit-item fa fa-pencil mt-1 float-right"></i>
-            </a>
-          </small>
-        </li>
-        <li class="list-group-item" id="item-2">
-          <strong>Eggs: </strong>
-          <em>300 Calories</em>
-          <small>
-            <a href="#">
-              <i class="edit-item fa fa-pencil mt-1 float-right"></i>
-            </a>
-          </small>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-
- 
-</div>
-</div>
-
-      <footer class="footer">
-        <div class="container">
-          <span class="text-muted">Disclaimer: This website is for a coding project and should not be taken as medical or physical advice</span>
         </div>
-      </footer>
+      </div>
+    </div>
+
+    <textarea
+      ng-model="vm.query"
+      name=""
+      id=""
+      cols="30"
+      rows="5"
+      class="form-control ng-pristine ng-valid ng-touched"
+      ng-change="vm.clear()"
+      style="font-size: 24px"
+      data-jq-watermark="processed"
+    ></textarea>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted"
+          >Disclaimer: This website is for a coding project and should not be
+          taken as medical or physical advice</span
+        >
+      </div>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
