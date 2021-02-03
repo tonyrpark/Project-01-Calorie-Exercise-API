@@ -33,9 +33,9 @@ Try our Calorie API App at this link: https://tonyrpark.github.io/Project-01-Cal
 
 #### Screenshots
 
-![App in Action GIF - Full Size](https://hosting.photobucket.com/images/kk166/tonyfcpremix/project1api.gif)
-![iPad Size](<https://hosting.photobucket.com/images/kk166/tonyfcpremix/tonyrpark.github.io_Project-01-Calorie-Exercise-API_(iPad_Pro)_(1).png>)
 ![iPhone Size](<https://hosting.photobucket.com/images/kk166/tonyfcpremix/tonyrpark.github.io_Project-01-Calorie-Exercise-API_(iPhone_X).png>)
+
+![App in Action GIF - Full Size](https://hosting.photobucket.com/images/kk166/tonyfcpremix/project1api.gif)
 
 ##### Branches
 
