@@ -4,9 +4,7 @@ $("#find-food").on("click", function (event) {
   const cal = $("#food-input").val();
   const stuff = `${encodeURIComponent(cal)}`;
   const queryURL = `https://api.nal.usda.gov/fdc/v1/foods/search?api_key=cIdiRs2C1u9alyDf47ytXR0cxaz8E6K37jiI15Dc&query=${stuff}`;
-
   console.log(stuff);
-
   $.ajax({
     url: queryURL,
     method: "GET",
@@ -14,7 +12,6 @@ $("#find-food").on("click", function (event) {
     console.log(response);
     for (let calories of response.foods[0].foodNutrients) {
       console.log("test");
-
       if (calories.nutrientId === 1008) {
         console.log("value");
         console.log(calories.value);
