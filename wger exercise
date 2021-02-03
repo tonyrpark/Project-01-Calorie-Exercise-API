@@ -1,0 +1,444 @@
+HTTP 200 OK
+                
+                    Allow:
+                    GET, POST, HEAD, OPTIONS
+                
+                    Content-Type:
+                    application/json
+                
+                    Vary:
+                    Accept
+                
+                
+{
+    "count": 408,
+    "next": "https://wger.de/api/v2/exercise/?format=api&limit=20&offset=20",
+    "previous": null,
+    "results": [
+        {
+            "id": 345,
+            "category": 10,
+            "description": "
+Two Handed Russian Style Kettlebell swing",
+            "name": "2 Handed Kettlebell Swing",
+            "name_original": "2 Handed Kettlebell swing",
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [
+                10
+            ],
+            "creation_date": "2015-08-03",
+            "language": 2,
+            "uuid": "c788d643-150a-4ac7-97ef-84643c6419bf",
+            "variations": null
+        },
+        {
+            "id": 174,
+            "category": 9,
+            "description": "
+\n
+in eine aufrechte Position setzen, bei der die Beine hüftbreit geöffnet sind\n
+den Rücken, die Knie und die Oberschenkelaußenseite an die jeweiligen Polster pressen\n
+mit den Händen an den Griffen festhalten\n
+die Oberschenkel bis zum Anschlagpunkt der Hebelarme auseinander drücken\n
+danach die Beine wieder zusammen führen\n
+das Gesäß nicht vom Sitz abheben\n
+beim Auseinanderdrücken der Hebelarme aus- und beim Zusammenführen einatmen\n",
+            "name": "Abduktoren-Maschine",
+            "name_original": "Abduktoren-Maschine",
+            "muscles": [
+                8,
+                6
+            ],
+            "muscles_secondary": [
+                11
+            ],
+            "equipment": [],
+            "creation_date": "2013-07-19",
+            "language": 1,
+            "uuid": "99881bdd-43d7-4c3b-82ed-9c187d0455b7",
+            "variations": null
+        },
+        {
+            "id": 223,
+            "category": 9,
+            "description": "
+Oberschenkel Innenseite!",
+            "name": "Adduktoren Maschine",
+            "name_original": "Adduktoren Maschine",
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [],
+            "creation_date": "2014-02-26",
+            "language": 1,
+            "uuid": "e56d0a17-b1b8-427d-991e-97c530c7db6a",
+            "variations": null
+        },
+        {
+            "id": 228,
+            "category": 13,
+            "description": "
+Zwei Kurzhanteln mit den Handflächen nach innen vor der Brust halten, Ellbogen unterhalb der Handgelenke.\n
+Ellbogen nach außen bringen und Hanteln über den Kopf heben. Drehung kommt aus dem Ellbogen, nicht aus den Armen!\n
+Wenn die Arme durchgestreckt sind, die gleiche Bewegung rückwärts ausführen.",
+            "name": "Arnold Press",
+            "name_original": "Arnold Press",
+            "muscles": [
+                2
+            ],
+            "muscles_secondary": [
+                3,
+                9,
+                5
+            ],
+            "equipment": [
+                3
+            ],
+            "creation_date": "2014-03-09",
+            "language": 1,
+            "uuid": "880bff63-6798-4ffc-a818-b2a1ccfec0f7",
+            "variations": 5
+        },
+        {
+            "id": 227,
+            "category": 13,
+            "description": "
+Very common shoulder exercise.\n
+ \n
+As shown here: https://www.youtube.com/watch?v=vj2w851ZHRM
+
+",
+            "name": "Arnold Shoulder Press",
+            "name_original": "Arnold Shoulder Press",
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [
+                3
+            ],
+            "creation_date": "2014-03-09",
+            "language": 2,
+            "uuid": "53ca25b3-61d9-4f72-bfdb-492b83484ff5",
+            "variations": 5
+        },
+        {
+            "id": 353,
+            "category": 9,
+            "description": "
+\n
+single leg sit and stand\n",
+            "name": "Asai Squad",
+            "name_original": "Asai Squad",
+            "muscles": [
+                10
+            ],
+            "muscles_secondary": [
+                8
+            ],
+            "equipment": [],
+            "creation_date": "2015-10-22",
+            "language": 7,
+            "uuid": "583281c7-2362-48e7-95d5-8fd6c455e0fb",
+            "variations": null
+        },
+        {
+            "id": 5,
+            "category": 9,
+            "description": "
+.",
+            "name": "Ausfallschritte im Gehen",
+            "name_original": "Ausfallschritte im Gehen",
+            "muscles": [
+                8,
+                10
+            ],
+            "muscles_secondary": [],
+            "equipment": [
+                3
+            ],
+            "creation_date": "2013-05-05",
+            "language": 1,
+            "uuid": "5675ae61-6597-4806-ae5c-2dda5a5ac03c",
+            "variations": null
+        },
+        {
+            "id": 55,
+            "category": 9,
+            "description": "
+.",
+            "name": "Ausfallschritte Stehend",
+            "name_original": "Ausfallschritte stehend",
+            "muscles": [
+                8,
+                10
+            ],
+            "muscles_secondary": [],
+            "equipment": [
+                3
+            ],
+            "creation_date": "2013-05-05",
+            "language": 1,
+            "uuid": "27301836-ed7f-4510-83e7-66c0b8041a44",
+            "variations": null
+        },
+        {
+            "id": 135,
+            "category": 8,
+            "description": "",
+            "name": "Ausfallschritt Trizepsdrücken ü. Kopf, ß-Stange",
+            "name_original": "Ausfallschritt Trizepsdrücken ü. Kopf, ß-Stange",
+            "muscles": [
+                5
+            ],
+            "muscles_secondary": [],
+            "equipment": [],
+            "creation_date": "2013-05-05",
+            "language": 1,
+            "uuid": "c8d08cbd-d406-4ce0-b1b9-10b236272d30",
+            "variations": null
+        },
+        {
+            "id": 289,
+            "category": 8,
+            "description": "
+Grab dumbbells and extend arms to side and hold as long as you can",
+            "name": "Axe Hold",
+            "name_original": "axe hold",
+            "muscles": [
+                2,
+                9
+            ],
+            "muscles_secondary": [
+                9
+            ],
+            "equipment": [
+                3
+            ],
+            "creation_date": "2014-11-02",
+            "language": 2,
+            "uuid": "6add5973-86d0-4543-928a-6bb8b3f34efc",
+            "variations": null
+        },
+        {
+            "id": 677,
+            "category": 13,
+            "description": "
+Nehmen Sie die Hanteln und strecken Sie die Arme zur Seite. Halten Sie sie so lange wie möglich.",
+            "name": "Axe Hold",
+            "name_original": "Axe Hold",
+            "muscles": [
+                2
+            ],
+            "muscles_secondary": [
+                9
+            ],
+            "equipment": [
+                3
+            ],
+            "creation_date": "2020-01-16",
+            "language": 1,
+            "uuid": "8e9d8968-323d-468c-9174-8cf11a105fad",
+            "variations": null
+        },
+        {
+            "id": 637,
+            "category": 9,
+            "description": "
+Place a barbell in a rack just below shoulder-height. Dip under the bar to put it behind the neck across the top of the back, and grip the bar with the hands wider than shoulder-width apart. Lift the chest up and squeeze the shoulder blades together to keep the straight back throughout the entire movement. Stand up to bring the bar off the rack and step backwards, then place the feet so that they are a little wider than shoulder-width apart. Sit back into hips and keep the back straight and the chest up, squatting down so the hips are below the knees. From the bottom of the squat, press feet into the ground and push hips forward to return to the top of the standing position.",
+            "name": "Back Squat",
+            "name_original": "Back Squat",
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [],
+            "creation_date": "2019-05-29",
+            "language": 2,
+            "uuid": "0fd6154d-fb53-4b24-acc0-1c5c05b57ebc",
+            "variations": null
+        },
+        {
+            "id": 38,
+            "category": 8,
+            "description": "
+Lege dich auf die Bank, die Stange direkt über die Augen, die Knie etwas angewinkelt und die Füße fest auf dem Boden. Greife nun die Stange mit einem engen Griff (nicht mehr als 20cm.). Führe nun das Gewicht so weit nach unten, bis die Oberarme paralell zum Boden sind, gehe dann wieder nach obern. Bringe die Stange nicht wie beim (breiten) Bankdrücken auf Brusthöhe runter, sondern weiter unten. Auf der tiefsten Stelle sollten deine Arme einen rechten Winkel machen.",
+            "name": "Bankdrücken Eng",
+            "name_original": "Bankdrücken eng",
+            "muscles": [
+                5
+            ],
+            "muscles_secondary": [
+                2,
+                4
+            ],
+            "equipment": [
+                1
+            ],
+            "creation_date": "2013-05-05",
+            "language": 1,
+            "uuid": "4def60e7-ed8d-4a9d-bf76-ceb15ecf9779",
+            "variations": null
+        },
+        {
+            "id": 77,
+            "category": 11,
+            "description": "
+Der Bewegungsablauf ist ähnlich zur Übung mit einer Langhantel.\n
+Nehme die Gewichte in die Hände und lege dich auf die Bank. Halte die Hanteln neben der Brust auf Brustwarzenhöhe und drücke sie nun nach oben, bis die Arme ausgestreckt sind. Lasse die Gewichte nun langsam und kontrolliert runter.\n
+ ",
+            "name": "Bankdrücken KH",
+            "name_original": "Bankdrücken KH",
+            "muscles": [
+                4
+            ],
+            "muscles_secondary": [
+                2,
+                5
+            ],
+            "equipment": [
+                8,
+                3
+            ],
+            "creation_date": "2013-05-05",
+            "language": 1,
+            "uuid": "06450bcb-03a8-4bd7-8349-ef677ee57ea3",
+            "variations": 30
+        },
+        {
+            "id": 15,
+            "category": 11,
+            "description": "
+Lege dich auf die Bank, die Stange direkt über die Augen, die Knie etwas angewinkelt und die Füße fest auf dem Boden. Greife die Stange breit und lasse sie langsam und kontrolliert runter, dabei sollte die Stange kurz auf Brustwarzenhöhe den Körper berühren. Dann das Gewicht wieder hochdrücken bis die Arme durchgestreckt sind.\n
+Bei hohem Gewicht, empfielt sich natürlich einen Spotter zu haben, der einen hilft falls man die Stange nicht alleine hochdrücken kann.\n
+Mit der Breite des Griffs kann außerdem kontrolliert werden, welcher Bereich der Brust stärker belastet wird:\n
+\n
+breiter Griff: äußere Brustmuskeln\n
+enger Griff: innere Brustmuskeln und Trizeps\n",
+            "name": "Bankdrücken LH",
+            "name_original": "Bankdrücken LH",
+            "muscles": [
+                4
+            ],
+            "muscles_secondary": [
+                2,
+                5
+            ],
+            "equipment": [
+                1,
+                8
+            ],
+            "creation_date": "2013-05-05",
+            "language": 1,
+            "uuid": "198dcb2e-e35f-4b69-ae8b-e1124d438eae",
+            "variations": 30
+        },
+        {
+            "id": 343,
+            "category": 10,
+            "description": "
+Place a barbell on the floor at your feet.\n
+Bending at the waist, grip the barbell with a shoulder with overhand grip.\n
+With a slow controlled motion, roll the bar out so that your back is straight.\n
+Roll back up raising your hips and butt as you return to the starting position.",
+            "name": "Barbell Ab Rollout",
+            "name_original": "Barbell Ab Rollout",
+            "muscles": [
+                14,
+                6
+            ],
+            "muscles_secondary": [
+                2,
+                12
+            ],
+            "equipment": [
+                1
+            ],
+            "creation_date": "2015-07-27",
+            "language": 2,
+            "uuid": "1b9dc5bc-790b-4e21-a55d-f8b3115e94c5",
+            "variations": null
+        },
+        {
+            "id": 407,
+            "category": 9,
+            "description": "
+Perform leg squats with barbell behind your legs",
+            "name": "Barbell Hack Squats",
+            "name_original": "Barbell Hack Squats",
+            "muscles": [
+                10
+            ],
+            "muscles_secondary": [
+                8
+            ],
+            "equipment": [
+                1
+            ],
+            "creation_date": "2016-07-30",
+            "language": 2,
+            "uuid": "1215dad0-b7e0-42c6-80d4-112f69acb68a",
+            "variations": 12
+        },
+        {
+            "id": 405,
+            "category": 9,
+            "description": "
+Put barbell on the back of your shoulders. Stand upright, then take the first step forward. Step should bring you forward so that your supporting legs knee can touch the floor. Then stand back up and repeat with the other leg.\n
+Remember to keep good posture.",
+            "name": "Barbell Lunges",
+            "name_original": "Barbell Lunges",
+            "muscles": [
+                10
+            ],
+            "muscles_secondary": [
+                8
+            ],
+            "equipment": [
+                1
+            ],
+            "creation_date": "2016-07-30",
+            "language": 2,
+            "uuid": "ae6a6c23-4616-49b7-a152-49d7461c2b7f",
+            "variations": 13
+        },
+        {
+            "id": 759,
+            "category": 8,
+            "description": "
+Sitting on a bench, grab a barbell with your palms facing down and your hands shoulder-width apart. Rest your forearms on your thighs and allow your wrists to hang over your knees.\n
+Curl your knuckles towards your face, lifting the barbell. Pause for a moment in the top position, then slowly return the barbell to the starting position.",
+            "name": "Barbell Reverse Wrist Curl",
+            "name_original": "Barbell reverse wrist curl",
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [
+                1,
+                8
+            ],
+            "creation_date": "2020-04-01",
+            "language": 10,
+            "uuid": "95b25f5e-4a01-48f1-a3df-2b7fe8fd624d",
+            "variations": null
+        },
+        {
+            "id": 344,
+            "category": 8,
+            "description": "
+Position barbell overhead with narrow overhand grip.\n
+Lower forearm behind upper arm with elbows remaining overhead. Extend forearm overhead. Lower and repeat.",
+            "name": "Barbell Triceps Extension",
+            "name_original": "Barbell Triceps Extension",
+            "muscles": [
+                5
+            ],
+            "muscles_secondary": [
+                2,
+                4
+            ],
+            "equipment": [
+                1
+            ],
+            "creation_date": "2015-07-27",
+            "language": 2,
+            "uuid": "2cd5e256-20a7-4bc8-a7a8-d62bf8ce00cf",
+            "variations": 17
+        }
+    ]
+}
