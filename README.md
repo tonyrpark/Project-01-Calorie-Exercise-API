@@ -2,6 +2,8 @@ Project-01-Calorie-Exercise-API
 
 Try our Calorie API App at this link: https://tonyrpark.github.io/Project-01-Calorie-Exercise-API/
 
+![App in Action GIF - Full Size](project1api.gif)
+
 # Files
 
 1. index.html
@@ -34,8 +36,6 @@ Try our Calorie API App at this link: https://tonyrpark.github.io/Project-01-Cal
 #### Screenshots
 
 ![iPhone Size](<https://hosting.photobucket.com/images/kk166/tonyfcpremix/tonyrpark.github.io_Project-01-Calorie-Exercise-API_(iPhone_X).png>)
-
-![App in Action GIF - Full Size](project1api.gif)
 
 ##### Branches
 
