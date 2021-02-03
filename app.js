@@ -74,7 +74,7 @@ const ItemCtrl = (function () {
   }
 
   addItem: function addItem(name, calories) {
-    //Createing IDs
+    //Creating IDs
     let ID;
     if (data.items.length > 0) {
       ID = data.items[data.items.length - 1].id + 1;
@@ -188,8 +188,8 @@ const UI = (function () {
 
   getItemInput: function getItemInput() {
     return {
-      name: document.querySelector("#item-name").value,
-      calories: document.querySelector("#item-calories").value,
+      name: document.querySelector(".item-name").value,
+      calories: document.querySelector(".item-calories").value,
     };
   }
 
@@ -208,8 +208,8 @@ const UI = (function () {
   }
 
   clearFields: function clearFields() {
-    document.querySelector("#item-name").value = "";
-    document.querySelector("#item-calories").value = "";
+    document.querySelector(".item-name").value = "";
+    document.querySelector(".item-calories").value = "";
   }
 
   clearEditState: function clearEditState() {
@@ -234,9 +234,9 @@ const UI = (function () {
   };
 
   addItemToForm: function addItemToForm() {
-    document.querySelector("#item-name").value = ItemCtrl.getCurrentItem().name;
+    document.querySelector(".item-name").value = ItemCtrl.getCurrentItem().name;
     document.querySelector(
-      "#item-calories"
+      ".item-calories"
     ).value = ItemCtrl.getCurrentItem().calories;
     UI.showEditState();
   }
@@ -424,3 +424,84 @@ const App = (function (ItemCtrl, UI, StorageCtrl) {
 })(ItemCtrl, UI, StorageCtrl);
 
 App.init();
+
+// TONY'S CODE TO ADD FOR EX INPUT
+const AppEx = (function (ItemCtrl, UI, StorageCtrl) {
+  //Event listeners
+  const loadEventListenersEx = function () {
+    //Add item
+    document.querySelector(".addEx").addEventListener("click", itemAddSubmit);
+    //Edit click event
+    document
+      .querySelector("#item-list")
+      .addEventListener("click", UI.itemEditClick);
+    //Update item event
+    document
+      .querySelector(".update-btn")
+      .addEventListener("click", UI.itemUpdateSubmit);
+    //Persisting the update to storage
+    document
+      .querySelector(".update-btn")
+      .addEventListener("click", StorageCtrl.updateItemFromStorage);
+    //Back button event
+    document
+      .querySelector(".back-btn")
+      .addEventListener("click", UI.clearEditState);
+    //Delete item event
+    document.querySelector(".delete-btn").addEventListener("click", () => {
+      UI.deleteItem();
+      StorageCtrl.deleteItemFromStorage();
+    });
+    //Delete all
+    document.querySelector(".delete-all-btn").addEventListener("click", () => {
+      StorageCtrl.deleteAllFromStorage();
+      ItemCtrl.getItems();
+      UI.showTotalCalories();
+      UI.deleteAllFromUI();
+      UI.clearFields();
+      UI.clearEditState();
+    });
+  };
+
+  //Add item submit
+  const itemAddSubmitEx = function (t) {
+    t.preventDefault();
+    const inputEx = UI.getItemInput();
+    if (input.name !== "" && input.calories !== "") {
+      const newItemEx = ItemCtrl.addItem(input.name, input.calories);
+      UI.addListItem(newItem);
+
+      //Get totoal calories
+      const sumCaloriesEx = ItemCtrl.sumCalories();
+      //Updating total calories in the UI
+      UI.showTotalCalories(sumCalories);
+
+      //Store the item in localStorage
+      StorageCtrl.storeItem(newItem);
+
+      //Clearing the input fields
+      UI.clearFields();
+    }
+  };
+
+  return {
+    init: function () {
+      //Clear edit state
+      UI.clearEditState();
+      console.log("Starting the app...");
+      //Fetching the items
+      const items = ItemCtrl.getItems();
+      //Populating the list with items
+      UI.populateItems(items);
+      //Calculating the callories
+      const sumCalories = ItemCtrl.sumCalories();
+      UI.showTotalCalories(sumCalories);
+      //Load event listeners
+      // loadEventListeners();
+    },
+  };
+})(ItemCtrl, UI, StorageCtrl);
+
+AppEx.init();
+
+//END OF TONY'S CODE
