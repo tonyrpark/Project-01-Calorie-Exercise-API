@@ -14,10 +14,6 @@ url: queryURL,
 method: "GET"})
 .then(function(response) {
 console.log(response)
-//console.log(response.foods[0].foodNutrients[9].value)
-
-
-
 for (let calories of response.foods[0].foodNutrients)
 {
   console.log("test");
@@ -25,12 +21,14 @@ for (let calories of response.foods[0].foodNutrients)
   if (calories.nutrientId === 1008){
     console.log("value");
     console.log(calories.value);
-    $("#food-view").text(JSON.stringify(calories.value));
+    $("#food-view").val(calories.value);
   }
 }
 
 }
  )});
+// $("#food-view").val(response.foods[0].foodNutrients[9].value);
+
 
 // EXERCISE API CODE
 
