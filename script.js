@@ -22,15 +22,42 @@ $("#find-food").on("click", function (event) {
 });
 
 //Motivational Quotes API
+// const settings = {
+//   async: true,
+//   crossDomain: true,
+//   url: "https://bodybuilding-quotes.p.rapidapi.com/single-quote?id=1",
+//   method: "GET",
+//   headers: {
+//     "x-api-key": "{{api-key}}",
+//     "x-rapidapi-key": "980fbf3eb4msh7995ecf778f3f83p1f9cdejsn73478224c087",
+//     "x-rapidapi-host": "bodybuilding-quotes.p.rapidapi.com",
+//   },
+// };
+
+// $.ajax(settings).done(function (response) {
+//   console.log(response);
+//   console.log(response.quote);
+//   var motoQuote = $(".motivationalArea")
+//     .val(response.quote)
+//     .text(
+//       "Motivational Quote of the Day: " +
+//         response.quote +
+//         " -" +
+//         response.author
+//     );
+// });
+
+//test
 const settings = {
   async: true,
   crossDomain: true,
-  url: "https://bodybuilding-quotes.p.rapidapi.com/single-quote?id=1",
+  url:
+    "https://quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com/quote?token=ipworld.info",
   method: "GET",
   headers: {
-    "x-api-key": "{{api-key}}",
     "x-rapidapi-key": "980fbf3eb4msh7995ecf778f3f83p1f9cdejsn73478224c087",
-    "x-rapidapi-host": "bodybuilding-quotes.p.rapidapi.com",
+    "x-rapidapi-host":
+      "quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com",
   },
 };
 
@@ -38,13 +65,8 @@ $.ajax(settings).done(function (response) {
   console.log(response);
   console.log(response.quote);
   var motoQuote = $(".motivationalArea")
-    .val(response.quote)
+    .val(response.text)
     .text(
-      "Motivational Quote of the Day: " +
-        response.quote +
-        " -" +
-        response.author
+      "Motivational Quote of the Day: " + response.text + " -" + response.author
     );
 });
-
-//test
