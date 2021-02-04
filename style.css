@@ -22,7 +22,7 @@ html {
 
 .jumbotron {
   opacity: 100%;
-  text-align: center;
+  text-align: left;
   background-image: url(https://hosting.photobucket.com/images/kk166/tonyfcpremix/fitness-workout-gym-weights-female-athlete.jpg);
   height: 400px;
   background-size: cover;
@@ -36,8 +36,9 @@ html {
 .coolDisplay {
   font-family: "Merriweather", serif;
   font-weight: 800;
-  letter-spacing: 0.75rem;
+  letter-spacing: 0.5rem;
   font-size: 3vw;
+  text-align: left;
 }
 
 .lead {
