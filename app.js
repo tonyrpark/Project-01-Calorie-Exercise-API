@@ -1,3 +1,5 @@
+//This code was taken from Bootstrap and modified to fit our project
+
 //Storage controller
 const StorageCtrl = (function () {
   storeItem: function storeItem(item) {
