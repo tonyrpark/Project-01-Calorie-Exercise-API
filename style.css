@@ -33,11 +33,11 @@ html {
   font-size: 15px;
 }
 
-.display-4 {
+.coolDisplay {
   font-family: "Merriweather", serif;
   font-weight: 800;
-  letter-spacing: 0.5rem;
-  font-size: 1vw;
+  letter-spacing: 0.75rem;
+  font-size: 3vw;
 }
 
 .lead {
